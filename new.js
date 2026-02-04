@@ -174,8 +174,24 @@
         // callback();
     // },2000);
 // }
-
+_
 // function eatDinnera(callback){
     // console.log("starting dinner")
     // setTimeout
 // }
+// let done=true;
+// setTimeout(()=>{
+    // if(done){
+        // res({name:"anand",age:23})
+    // }else{
+        // rej("word has not been completed")
+    // }
+  // },5000)
+// })
+// p.then((data)=>{
+    // console.log(data.name)
+// }).catch((err)=>{
+    // console.log(err)
+// }).finally(()=>{
+    // console.log("finally block")
+// })
