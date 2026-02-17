@@ -195,3 +195,14 @@ _
 // }).finally(()=>{
     // console.log("finally block")
 // })
+console.log("first line")
+try{
+    let age=16
+    if(age<18){
+        throw new Error("you are minor")
+    }
+}catch(e){
+    console.error(e)
+    console.log("hello we got an error")
+}
+console.log("last line")
