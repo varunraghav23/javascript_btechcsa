@@ -224,3 +224,31 @@ _
     // }
 // }
 // getData()
+async function getData(){
+      const response=await fetch("https//dummyjson.com/prodcuts/add"),{
+          method:'post',
+          headers:{'content-Type':'application/json'},
+          body:JSON.stringify({
+            title:"MAcbook m4",
+            description:"Lorem ipsum dolor sit amet",
+            category: "electronics",
+            price:999.8,
+            discountPercentage:10.48,
+            rating:4.8,
+            stock:99,          
+        })
+})
+   if(response.ok==false){
+       throw new Error("Something went wrong");
+    }
+    console.log(response)
+    const data=await response.json()
+    console.log (data)
+    data.products.forEach((product)=>{
+        console.log(product.title)
+    })
+    }catch(e){
+        console.log(e)
+    }
+} 
+getData()
