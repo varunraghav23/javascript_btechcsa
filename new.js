@@ -195,14 +195,32 @@ _
 // }).finally(()=>{
     // console.log("finally block")
 // })
-console.log("first line")
-try{
-    let age=16
-    if(age<18){
-        throw new Error("you are minor")
-    }
-}catch(e){
-    console.error(e)
-    console.log("hello we got an error")
-}
-console.log("last line")
+// console.log("first line")
+// try{
+    // let age=16
+    // if(age<18){
+        // throw new Error("you are minor")
+    // }
+// }catch(e){
+    // console.error(e)
+    // console.log("hello we got an error")
+// }
+// console.log("last line")
+// async function getData(){
+    // try{
+        // const response=await fetch("https://dummyjson.com/products")
+        
+    // if(response.ok===false){
+        // throw new Error("something went wrong")
+    // }
+    // console.log(response)
+    // const data=await response.json()
+    // console.log(data)
+    // data.products.forEach((products)=>{
+        // console.log(product.title)
+    // })
+    // }catch(e){
+        // console.log(e)
+    // }
+// }
+// getData()
